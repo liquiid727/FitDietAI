@@ -1,0 +1,11 @@
+server:
+  port: 8080
+deepseek:
+  base_url: https://api.deepseek.com
+  model: deepseek-chat
+  api_key: ""
+es8:
+  address: http://localhost:9200
+  username: ""
+  password: ""
+  index: recipes
