@@ -34,7 +34,6 @@ func NewMarkdownParser() *MarkdownParser { return &MarkdownParser{} }
 // 返回值说明：
 //   - []string：匹配到的 Markdown 文件的绝对或相对路径集合；不保证排序稳定。
 //   - error：当 root 为空、非目录或遍历期间发生 I/O 错误时返回具体错误。
-//
 func (p *MarkdownParser) Collect(root string) ([]string, error) {
 	if root == "" {
 		return nil, fmt.Errorf("collect: root is empty")
